@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Foundation 5</title>
+		<script type="text/javascript" src="//use.typekit.net/yal5vem.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  		{{ "app.css" | asset_url | stylesheet_tag }}
+  		<script src="{{ "modernizr.js" | asset_url }}"></script>
+	</head>
+	<body>
+
+		<div id="header" class="row">
+			<nav class="navigation large-12 medium-12 small-12 columns">
+			    <ul>
+			        <li><a href="/">WHAT</a></li>
+			     	<li><a href="who">WHO</a></li>
+			     	<li><a href="where">WHERE</a></li>
+			    </ul>
+			</nav>
+		</div>
+		
+
+
+		{% block content %}{% endblock %}
+  		{% include "scripts" %}
+	</body>
+</html>
