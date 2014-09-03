@@ -10,20 +10,26 @@
   		<script src="{{ "modernizr.js" | asset_url }}"></script>
 	</head>
 	<body>
+		<div id="content">
+			<div id="header" class="row">
+				<nav class="navigation large-12 medium-12 small-12 columns">
+				    <ul>
+				        <li><a href="/">WHAT</a></li>
+				     	<li><a href="/who">WHO</a></li>
+				    </ul>
+				</nav>
+			</div>
+			
 
-		<div id="header" class="row">
-			<nav class="navigation large-12 medium-12 small-12 columns">
-			    <ul>
-			        <li><a href="/">WHAT</a></li>
-			     	<li><a href="who">WHO</a></li>
-			     	<li><a href="where">WHERE</a></li>
-			    </ul>
-			</nav>
+
+			{% block content %}{% endblock %}
+			<div id="footer" class="row">
+				<div class="large-12 medium-12 small-12 columns">
+					<p>copyright blabla</p>
+				</div>
+				
+			</div>
 		</div>
-		
-
-
-		{% block content %}{% endblock %}
-  		{% include "scripts" %}
+	  	{% include "scripts" %}
 	</body>
 </html>
