@@ -146,21 +146,22 @@ a:active { color: #222; }
 	margin-bottom: 0.5em;
 }
 
-.technology{
+.technology, .collaborators{
 	font-weight: 300;
 }
 
-.project-links {
 
-}
-
-.project-links a:hover, #social-media-list li a:hover, .bio a:hover{
+.project-links a:hover, #social-media-list li a:hover, .bio a:hover, .collaborators a:hover, .description a:hover{
 	border-top: 1px solid;
 
 }
-.project-links a, #social-media-list li a, .bio a{
+.project-links a, #social-media-list li a, .bio a, .description a{
 	font-weight: 500;
 	font-style: italic;
+}
+
+.project-links {
+	margin-top: 2em;
 }
 
 .media{
