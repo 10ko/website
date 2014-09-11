@@ -4959,15 +4959,15 @@ a:active {
 
 .project-preview-caption {
   width: 100%;
-  min-height: 2em;
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
-  bottom: 0; }
+  bottom: -1px; }
 
 .project-preview-caption p {
   margin: 0;
   padding: 0 0.5em;
-  text-align: left; }
+  text-align: left;
+  display: none; }
 
 .desaturate {
   -webkit-transition: -webkit-filter 0.5s;
@@ -5003,17 +5003,25 @@ a:active {
 .technology {
   font-weight: 300; }
 
-.project-links a:hover {
+.project-links a:hover, #social-media-list li a:hover, .bio a:hover {
   border-top: 1px solid; }
+
+.project-links a, #social-media-list li a, .bio a {
+  font-weight: 500;
+  font-style: italic; }
 
 .media {
   text-align: center; }
 
+#social-media-list {
+  list-style: none; }
+
 /* FOOTER */
 #footer {
+  margin-top: 3em;
   height: 2em;
   position: relative;
   bottom: 0px; }
 
 #footer p {
-  text-align: center; }
+  font-weight: 300; }
