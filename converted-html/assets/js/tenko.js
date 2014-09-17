@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function(){
 	$('.project-preview').hover(function() {
 	var toTogg = $('.project-preview-caption p',this);
 	toTogg.slideToggle("300");

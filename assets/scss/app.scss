@@ -151,11 +151,11 @@ a:active { color: #222; }
 }
 
 
-.project-links a:hover, #social-media-list li a:hover, .bio a:hover, .collaborators a:hover, .description a:hover{
+.project-links a:hover, .t-list li a:hover, .bio a:hover, .collaborators a:hover, .description a:hover{
 	border-top: 1px solid;
 
 }
-.project-links a, #social-media-list li a, .bio a, .description a{
+.project-links a, .t-list li a, .bio a, .description a{
 	font-weight: 500;
 	font-style: italic;
 }
@@ -168,10 +168,15 @@ a:active { color: #222; }
 	text-align: center;
 }
 
-#social-media-list {
+.t-list {
+	padding-top: 0;
 	list-style: none;
 }
-
+h3 {
+	font-weight: 500;
+	font-size: 1em;
+	margin-bottom: 0;
+}
 
 
 /* FOOTER */
