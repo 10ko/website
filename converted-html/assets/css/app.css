@@ -5034,3 +5034,6 @@ h3 {
 
 #footer p {
   font-weight: 300; }
+
+.map-div iframe {
+  max-height: 300px; }
